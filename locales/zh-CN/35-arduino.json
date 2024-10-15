@@ -1,0 +1,42 @@
+{
+    "arduino": {
+        "label": {
+            "pin": "引脚",
+            "type": "类型",
+            "port": "端口"
+        },
+        "placeholder": {
+            "port": "例如. /dev/ttyUSB0  COM1"
+        },
+        "status": {
+            "connectfirst": "连接到找到的第一块板",
+            "connect": "连接到 __device__",
+            "connected": "连接到 __device__",
+            "version": "版本: __version__",
+            "portclosed": "Arduino串行端口已关闭"
+        },
+        "state": {
+            "in": {
+                "digital": "数字引脚",
+                "pullup": "带上拉功能的数字引脚",
+                "analogue": "模拟引脚",
+                "string": "字符串"
+            },
+            "out": {
+                "digital": "数字（0/1）",
+                "analogue": "模拟 (0-255)",
+                "servo": "伺服（0-180）",
+                "string": "字符串"
+            }
+        },
+        "tip": {
+            "io": "<b>注意：</b>输出和输入不能使用同一引脚。",
+            "conf": "<b>提示：</b>使用搜索尝试自动检测串行端口。"
+        },
+        "errors": {
+            "portnotconf": "端口未配置",
+            "portnotfound": "未找到端口 : __device__",
+            "devnotfound": "找不到驱动 __dev__. 试着查找驱动板。"
+        }
+    }
+}

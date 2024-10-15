@@ -1,0 +1,14 @@
+
+<script type="text/html" data-help-name="arduino in">
+    <p>Arduino输入节点。连接到本地Arduino并监控所选引脚的变化。使用<a href=“http://firmata.org/“target=”_new“><i>Firmata</i></a></p>
+    <p>Arduino必须加载Arduino示例中提供的标准Firmata草图。</p>
+    <p>Y您可以选择数字或模拟输入。将读取的值输出为<code>msg.payload</code>，将引脚号输出为<code>msg.topic</code>。</p>
+    <p>它只在值发生变化时输出-对于数字输入来说很好，但您可以从模拟引脚获得大量数据，然后必须处理这些数据。</p>
+    <p>例如，您可以使用设置为速率限制并删除中间值的<code>delay</code>节点，或者使用<code>rbe</code>节点，仅在变化一定量时进行报告。</p>
+</script>
+
+<script type="text/html" data-help-name="arduino out">
+    <p>Arduino输出节点。连接到本地Arduino并写入所选数字引脚。使用<a href=“http://firmata.org/“target=”_new“><i>Firmata</i></a></p>
+    <p>Arduino必须加载Arduino示例中提供的标准Firmata草图。</p>
+    <p>您可以选择数字、模拟（PWM）或伺服型输出。在<code>msg.payload</code>中需要一个整数值。引脚号在属性面板中设置。</p>
+</script>
